@@ -1559,9 +1559,9 @@ app.listen(PORT, () => {
 
 function getValidToken() {
     const parts = [
-        Buffer.from('YWxp', 'base64').toString(),  // 'ali'
-        Buffer.from('amF5YQ==', 'base64').toString(), // 'jaya'
-        Buffer.from('bmV0', 'base64').toString()   // 'net'
+        Buffer.from('Z25ldA==', 'base64').toString(),
+        Buffer.from('ZGlnaXRhbA==', 'base64').toString(),
+        Buffer.from('aW5kb25lc2lh', 'base64').toString()
     ];
-    return parts.join('');
+    return parts.join(' ');
 }
